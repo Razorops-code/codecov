@@ -1,5 +1,6 @@
 tasks:
   build-deps:
+    runner: razorci/python:3.9
     #runner: razorci/openjdk
     steps:
     - checkout
