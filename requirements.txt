@@ -1,3 +1,4 @@
+python:3.9
 Flask
 ibm_db
 sendgrid
