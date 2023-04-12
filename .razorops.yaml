@@ -8,6 +8,7 @@ tasks:
     #- run: pip install -r requirements.txt
     - run: python api/app.py
     - run: pip install pytest
+    - run: pip freeze --local > api/requirements.txt
     - run: pip install pytest-cov
     - run: pytest --cov api/ --cov-report=xml:test-coverage.xml
     - codecov/upload 
