@@ -9,7 +9,7 @@ tasks:
     #- run: python api/app.py
     - run: pip install pytest
     - run: pip install pytest-cov
-    - run: pytest --cov api/ --cov-report=xml:smiles-coverage.xml
+    - run: pytest --cov api/ --cov-report=xml:test-coverage.xml
     - codecov/upload 
     - run: |
            curl -Os https://uploader.codecov.io/latest/linux/codecov
