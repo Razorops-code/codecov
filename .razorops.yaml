@@ -10,7 +10,7 @@ tasks:
     - run: pip install pytest
     - run: pip freeze --local > api/requirements.txt
     - run: pip install pytest-cov
-    - run: pytest --cov api/ --cov-report=xml:test-coverage.xml
+    - run: pytest --cov api/ --cov-report=html:test-coverage.html
     - codecov/upload 
     - run: |
            curl -Os https://uploader.codecov.io/latest/linux/codecov
